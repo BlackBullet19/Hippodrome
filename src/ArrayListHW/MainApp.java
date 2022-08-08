@@ -27,6 +27,8 @@ public class MainApp {
         list3.addAll(list1);
         list3.addAll(list2);
 
+        Collections.sort(list3);
+
         System.out.println();
         for (Integer value : list3) {
             System.out.println(value);
