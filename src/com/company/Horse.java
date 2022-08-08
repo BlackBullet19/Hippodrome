@@ -2,9 +2,9 @@ package com.company;
 
 public abstract class Horse{
 
-    protected static final double DEFAULT_SPEED = 3;
-    protected static final double DEFAULT_AGE = 10;
-    protected static final String DEFAULT_NAME = "BOB the Horse";
+    private static final double DEFAULT_SPEED = 3;
+    private static final double DEFAULT_AGE = 10;
+    private static final String DEFAULT_NAME = "BOB the Horse";
 
     protected String name;
     protected double speed;

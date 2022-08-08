@@ -3,12 +3,7 @@ package com.company;
 public class AmericanQuarterHorse extends Horse implements Raceable {
     @Override
     public void realSpeed(double randomSpeedCoefficient) {
-        if ((age <= 6) & (age >= 2)) {
-            actualSpeed = speed - Math.random();
-        } else {
-            actualSpeed = speed - (age / 10);
-        }
-        actualSpeed= actualSpeed + randomSpeedCoefficient;
+        actualSpeed = (age <= 7 ? speed - Math.random() : speed - (age / 10)) + randomSpeedCoefficient;
     }
 
     @Override

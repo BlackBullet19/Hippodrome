@@ -18,13 +18,7 @@ public class BoradorDog extends Dog implements Raceable {
 
     @Override
     public void realSpeed(double randomSpeedCoefficient) {
-        if ((age <= 5) & (age >= 1)) {
-            actualSpeed = speed - Math.random();
-        } else {
-            actualSpeed = speed - (age / 10);
-
-        }
-        actualSpeed= actualSpeed + randomSpeedCoefficient;
+        actualSpeed = (age <= 5 ? speed - Math.random() : speed - (age / 10)) + randomSpeedCoefficient;
     }
 
     @Override

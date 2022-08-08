@@ -2,9 +2,9 @@ package com.company;
 
 public abstract class Dog {
 
-    protected static final double DEFAULT_SPEED = 6;
-    protected static final double DEFAULT_AGE = 5;
-    protected static final String DEFAULT_NAME = "KEVIN the Dog";
+    private static final double DEFAULT_SPEED = 6;
+    private static final double DEFAULT_AGE = 5;
+    private static final String DEFAULT_NAME = "KEVIN the Dog";
 
     protected String name;
     protected double speed;
