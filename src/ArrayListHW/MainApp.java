@@ -52,11 +52,9 @@ public class MainApp {
         for (int i = 0; i < (list1.size() + list2.size()); i++) {
             if (!listIterator1.hasNext() && listIterator2.hasNext()) {
                 list3.add(list2.get(i - listPosIndex2));
-                listPosIndex1++;
                 listIterator2.next();
             } else if (listIterator1.hasNext() && !listIterator2.hasNext()) {
                 list3.add(list1.get(i - listPosIndex1));
-                listPosIndex2++;
                 listIterator1.next();
             } else if (list1.get(i - listPosIndex1) <= list2.get(i - listPosIndex2) && listIterator2.hasNext()) {
                 list3.add(list1.get(i - listPosIndex1));
